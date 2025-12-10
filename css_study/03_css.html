@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS 자식 선택자</title>
+        <style>
+            #container {
+                border: 10px solid aqua;
+                padding: 20px;
+                border-radius: 15px;
+            }
+
+            #container > p > span {
+                font-size: 18px;
+                color: chocolate;
+            }
+            #container > p:nth-child(2){
+                border: 1px solid black;
+            }
+            #container > p:nth-child(2) ~p{
+                border: 1px solid green;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h3>자식 선택자</h3>
+        <div id="container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+                <span>modi cum possimus beatae, tempore dolorum</span>
+                doloremque impedit quam doloribus sint tempora consectetur
+                libero ut consequatur laboriosam optio minus facilis soluta.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+                <span>modi cum possimus beatae, tempore dolorum</span>
+                doloremque impedit quam doloribus sint tempora consectetur
+                libero ut consequatur laboriosam optio minus facilis soluta.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+                <span>modi cum possimus beatae, tempore dolorum</span>
+                doloremque impedit quam doloribus sint tempora consectetur
+                libero ut consequatur laboriosam optio minus facilis soluta.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+                <span>modi cum possimus beatae, tempore dolorum</span>
+                doloremque impedit quam doloribus sint tempora consectetur
+                libero ut consequatur laboriosam optio minus facilis soluta.
+            </p>
+        </div>
+    </body>
+</html>
