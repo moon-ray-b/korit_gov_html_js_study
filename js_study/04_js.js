@@ -53,3 +53,24 @@ const student = [
 console.log(
     student.find((student) => student.name === "박윤호" && student.age === 6)
 );
+
+console.log(names.includes("빠니찬익")); //있고 없고를 찾는 용어
+
+const numbers = [1, 2, 3, 4, 5];
+console.log(numbers.filter((n) => n % 2 == 0)); //짝수를 가져와라 용어
+
+console.log(student.filter((student) => student.age === 6)); // 나이를 6살인 애를 가지고 와라
+
+console.log(numbers.map((n) => n * 10)); // n기준에서 10식 곱해라
+
+console.log(
+    student.map((student) => {
+        if (student.age === 18) {
+            return {
+                name: student.name,
+            };
+        }
+        return student;
+    })//18세 해당하는 사람은 이름만 출력 되는것이고 나머지는 18세가 아니기 때문에 출력한다
+);
+

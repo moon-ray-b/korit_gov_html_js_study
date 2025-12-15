@@ -36,7 +36,7 @@ console.log(!"a"); //false 문자열에 어떠한 것이 들어가있으면 true
 console.log(!""); //true
 console.log(!null); //true null은 false의 값을 들고 있기 때문
 console.log(!!null); //false
-//   z!! => 값을 명시적으로 boolean타입으로 변환하는 일반적인 방법
+//!! => 값을 명시적으로 boolean타입으로 변환하는 일반적인 방법
 
 console.log("abc".length); //3
 console.log("avs".length > 0); //true
